@@ -10,7 +10,6 @@ class Tiro(pygame.sprite.Sprite):
         pygame.sprite.Sprite.__init__(self)
         self.imagemTiro = pygame.image.load('imagens/tiro.png')
 
-
         self.rect = self.imagemTiro.get_rect()
         self.velocidadeTiro = 5
         self.rect.top = posy
@@ -27,7 +26,6 @@ class NaveEspacial(pygame.sprite.Sprite):
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
         self.ImagemNave = pygame.image.load('imagens/nave.png')
-
         self.rect = self.ImagemNave.get_rect()
         self.rect.centerx = largura / 2
         self.rect.centery = altura - 30
